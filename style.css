@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    
+}
+.navs{
+   
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.left-navs{
+    display: flex;
+    margin: 15px 30px ;
+    font-size: 30px;
+    cursor: pointer;
+}
+.left-navs .youtube .icon{
+    color: red;
+    margin-left: 25px;
+
+}
+
+.hide-side{
+    margin-left: -500px;
+ 
+}
+
+.midd-nav{
+    display: flex;
+    width: 30%;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+   
+}
+.midd-nav input{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding: 15px 30px;
+    border-radius: 50px;
+    position: relative;
+    border: 2px solid gray;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    font-size: 20px;
+}
+
+.midd-nav .wrap{
+    position: absolute;
+    width:80px;
+    height: 97%;
+    top: 0px;
+    right: 0px;
+    color: rgb(61, 60, 60);
+    font-size: 25px;
+    background-color: rgb(197, 197, 197);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.wrap .icon-search{
+    position: absolute;
+    margin: 9px 20px;
+
+}
+.right-navs{
+    margin-right: 70px;
+    margin-left: 90px;
+    font-size: 16px;
+    border: 0.1px solid;
+    border-radius: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    gap:  20px;
+    padding-top:78px;
+   
+    
+}
+hr{
+    width: 100%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+
+.side-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 30%;
+    /* background-color: greenyellow; */
+    width: 50%;
+    padding: 0 20px ; 
+    cursor: pointer;
+   font-size: 18px;
+  
+  
+  
+}
+.side-icons:hover{
+    background-color: rgb(204, 202, 202);
+    border-radius: 50px;
+
+}
+
+.videos h3{
+    width: 90%;
+    margin-top: 0;
+    margin-left: 15px;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 16px; 
+   padding-left: 15px;
+   margin-left: 15px;
+}
+
+.videos iframe{
+    border-radius: 25px;
+    border: 0;
+    transition: transform 0.4;
+}
+
+.videos:hover{
+    transform: scale(1.5);
+    
+}
+
+@media only screen and (max-width:750px){
+    .video-container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+       width: 100%;
+    }
+    .videos h3{
+        width: 90%; 
+    }
+    .videos iframe{
+        width: 90%;
+    }
+    .left-navs{
+        display: flex;
+        font-size: 22px;
+        /* margin-top: 18px; */
+    }
+    .nav-icon{
+        margin-left: -10px;
+        padding-left: 0;
+        font-size: 28px;
+    }
+
+    .left-navs .youtube .icon{
+        margin-left: 15px;
+    }
+    .midd-nav input{
+        width: 50%;
+        margin-top: -200px;
+    }
+
+    .right-navs{
+        border: 0;
+        margin: 0 10px;
+        font-size: 20px;
+        /* margin-top: 18px; */
+        
+    }
+    .midd-nav .wrap{
+        display: flex;
+        width: 10px;
+        height: 10px;
+        top: -10px;
+        right: -25px;
+        background:none;
+        position: absolute;
+
+    }
+    .wrap .icon-search{
+        margin-top: 0px;
+        /* margin-right: -30px; */
+    }
+    .side-icons .side{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hide-side{
+        margin-left: -500px;
+        font-size: 20px;
+    }
+
+    /* .show-side {
+        margin-left: 10px;
+    } */
+
+    .midd-nav .search{
+        padding: 5px 15px;
+        margin-top: 0px;
+        width: 100%;
+        height: 20px;
+        border: 2px solid;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .search-icon{
+        margin-top: -500px;
+    }
+}
+
